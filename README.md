@@ -18,11 +18,6 @@ Aesthetic color palette:
 - `#C3ACD0` – Muted Lavender
 - `#674188` – Deep Purple
 
-## 📷 Preview
-
-![Planner Screenshot](preview.png)  
-*(Add a screenshot of your app in the repo)*
-
 ## 🚀 Getting Started
 
 ### Prerequisites
