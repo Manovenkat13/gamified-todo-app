@@ -1,0 +1,145 @@
+/* Global & Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body {
+  margin: 0; padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #FFFBF5;
+  color: #674188;
+  transition: background 0.3s, color 0.3s;
+}
+body.dark {
+  background: #222;
+  color: #eee;
+}
+
+/* Container */
+.App {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 1rem;
+}
+.dark-toggle {
+  background: none; border: none; cursor: pointer;
+}
+
+/* Headings & Subtitles */
+h1 { font-size: 2.5rem; margin: 0; color: #674188; }
+.subtitle { font-weight: 600; letter-spacing: 0.5px; }
+
+/* Cards */
+.card {
+  background: #F7EFE5;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: background 0.3s;
+}
+body.dark .card { background: #333; }
+
+/* Inputs & Buttons */
+.input-row {
+  display: flex; gap: 0.5rem;
+}
+input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 2px solid #C3ACD0;
+  border-radius: 8px;
+  background: #fff;
+  transition: border-color 0.3s;
+}
+input:focus { border-color: #674188; outline: none; }
+button {
+  display: flex; align-items: center; gap: 0.3rem;
+  padding: 0.6rem 1rem;
+  background: #674188;
+  color: #FFFBF5;
+  border: none; border-radius: 8px;
+  font-weight: 600; cursor: pointer;
+  transition: transform 0.1s, background 0.3s;
+}
+button:hover {
+  background-color: #D1B5E0;
+  cursor: pointer;
+   }
+button:active { transform: scale(0.95); }
+
+/* Task List Styles */
+ul { list-style: none; padding: 0; margin: 0; }
+li {
+  display: flex; justify-content: space-between; align-items: center;
+  background: #FFFBF5;
+  border-left: 4px solid #C3ACD0;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+li:hover { 
+  background-color: #F7EFE5;
+  cursor: pointer;
+  transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+ }
+
+li.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+/* Priority colors on the left border */
+li[data-priority="low"]   { border-color: #A8E6CF; }
+li[data-priority="medium"]{ border-color: #FFD3B6; }
+li[data-priority="high"]  { border-color: #FF8B94; }
+
+
+
+/* Status Badges */
+.badge {
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+.badge.due { background: #C3ACD0; color: #FFFBF5; }
+.badge.overdue { background: #E57373; color: white; }
+
+/* XP Bar */
+.xp-bar { 
+  margin-bottom: 1rem; }
+.progress {
+  background: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+  margin-bottom: 1em;
+}
+.filler {
+  background: linear-gradient(90deg, #FFFBF5 0%, #674188 100%);
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Achievements */
+.achievement {
+  background: #C3ACD0; color: #FFFBF5;
+  padding: 0.5rem 1rem; border-radius: 8px;
+  margin: 0.5rem 0; font-weight: 600;
+  animation: popIn 0.4s ease-out;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .input-row { flex-direction: column; }
+  input, button { width: 100%; }
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to   { opacity: 1; transform: scale(1); }
+}
