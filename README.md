@@ -1,12 +1,37 @@
-# React + Vite
+# 🎯 Gamified Daily Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun and productive way to manage your daily tasks! This gamified planner rewards you with XP, achievements, and a spin-the-wheel game to boost motivation and make task management enjoyable.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ **Task Management** – Add, complete, and delete daily tasks easily.
+- 🧠 **XP System** – Earn XP for completing tasks and level up!
+- 🏆 **Achievements** – Unlock achievements for completing milestones.
+- 🎡 **Spin the Wheel** – Use spins earned from tasks to win rewards.
+- 📊 **XP Progress Bar** – Visually track your level-up progress.
 
-## Expanding the ESLint configuration
+## 🎨 UI Theme
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Aesthetic color palette:
+- `#FFFBF5` – Light Cream
+- `#F7EFE5` – Soft Beige
+- `#C3ACD0` – Muted Lavender
+- `#674188` – Deep Purple
+
+## 📷 Preview
+
+![Planner Screenshot](preview.png)  
+*(Add a screenshot of your app in the repo)*
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js and npm installed
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/gamified-planner.git
+cd gamified-planner
+npm install
+npm run dev
